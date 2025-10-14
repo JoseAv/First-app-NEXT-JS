@@ -2,6 +2,7 @@
 // https://gist.github.com/Klerith/3949f1c8b884d7101e378dfb668f0f3a
 
 import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const links = [
     { name: "accordion", href: "accordion" },
@@ -10,11 +11,10 @@ const links = [
     { name: "alert dialog", href: "alertDialog" },
     { name: "dialog", href: "dialog" },
     { name: "badge", href: "badge" },
-    { name: "calendar", href: "calendar" }
-
-
-
-
+    { name: "calendar", href: "calendar" },
+    { name: "avatar", href: "avatar" },
+    { name: "card", href: "card" },
+    { name: "carousel", href: "carousel" },
 ];
 
 export default function DashboardLayout({
@@ -103,8 +103,11 @@ export default function DashboardLayout({
                         </div>
                         <div className="flex items-center">
                             {/* User Avatar */}
-                            <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center">
-                                FH
+                            <div className=" text-white p-2 rounded-full w-2xs  flex items-center justify-center">
+                                <Avatar className=" w-10 h-10">
+                                    <AvatarImage src="https://github.com/shadcn.png" />
+                                    <AvatarFallback>CN</AvatarFallback>
+                                </Avatar>
                             </div>
                         </div>
                     </div>
