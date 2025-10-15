@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
+import { Toaster as SonnerToaster } from "@/components/ui/sonner"
 const links = [
     { name: "accordion", href: "accordion" },
     { name: "alert", href: "alert" },
@@ -25,6 +25,10 @@ const links = [
     { name: "sheet", href: "sheet" },
     { name: "skeleton", href: "skeleton" },
     { name: "slider", href: "slider" },
+    { name: "sonner", href: "sonner" },
+    { name: "data table", href: "data-table" },
+
+
 
 ];
 
@@ -35,6 +39,7 @@ export default function DashboardLayout({
 }) {
     return (
         <>
+            <SonnerToaster position="top-center" richColors />
             <nav className="bg-white border-b border-gray-200 fixed z-30 w-full">
                 <div className="px-3 py-3 lg:px-5 lg:pl-3">
                     <div className="flex items-center justify-between">
