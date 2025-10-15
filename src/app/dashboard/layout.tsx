@@ -22,7 +22,9 @@ const links = [
     { name: "Menu Bar", href: "menubar" },
     { name: "Input Otp", href: "input-itp" },
     { name: "progres", href: "progres" },
-
+    { name: "sheet", href: "sheet" },
+    { name: "skeleton", href: "skeleton" },
+    { name: "slider", href: "slider" },
 
 ];
 
