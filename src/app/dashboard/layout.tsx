@@ -27,9 +27,7 @@ const links = [
     { name: "slider", href: "slider" },
     { name: "sonner", href: "sonner" },
     { name: "data table", href: "data-table" },
-
-
-
+    { name: "form", href: "form" },
 ];
 
 export default function DashboardLayout({
